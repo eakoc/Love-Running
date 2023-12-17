@@ -211,6 +211,23 @@ main {
         width: 300px;
         right: 50px;
     }
+
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical > div,
+    #benefits-mental > div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
 /* Media query: laptops and larger (992px and up) */
@@ -219,3 +236,33 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
+/* Media query: laptops and larger (1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benfits > div {
+        flex: 1;
+    }
+
+    #benfits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+}
+
