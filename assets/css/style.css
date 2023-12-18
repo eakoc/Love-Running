@@ -25,6 +25,10 @@ h1, h2, h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -96,12 +100,14 @@ main {
 }
     
 #reasons h2 {
-    font-size: 280%;
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+    
 }
     
-#benefits-physical>div, #benefits-mental>div {
+#benefits-physical>div, 
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
